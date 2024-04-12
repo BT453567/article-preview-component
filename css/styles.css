@@ -1,0 +1,225 @@
+:root {
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+@font-face {
+    font-family: 'manrope';
+    src: url(../assets/fonts/Manrope-VariableFont_wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    font-family: 'manrope';
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--Desaturated-Dark-Blue);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: var(--Light-Grayish-Blue);
+}
+
+.article-preview-container {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 80%;
+    max-width: 750px;
+    border-radius: 10px;
+}
+
+.drawer-image-container {
+    height: 100%;
+    width: 100%;
+}
+
+.drawer-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.right-col-top-container {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+}
+
+#right-col-bottom-container {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.right-col h1 {
+    font-family: 'manrope';
+    font-weight: 700;
+    color: var(--Very-Dark-Grayish-Blue);
+    font-size: 1.2rem;
+}
+
+.p-content {
+    margin-top: 10px;
+}
+
+.avatar-and-links-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#avatar-left-aligned {
+    display: flex;
+    flex-direction: row;
+}
+
+#avatar-image-container {
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+#avatar-image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#name-container {
+    margin-left: 10px;
+    padding-top: 5px;   
+}
+
+.authors-name {
+    font-weight: 700;
+}
+
+.time-container {
+    margin-top: 5px;
+}
+
+.link-right-aligned {
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+#share-icon-button {
+    margin: 5px;
+    border: none;
+    background-color: var(--Light-Grayish-Blue);
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+#share-icon-button:hover {
+    background-color: var(--Desaturated-Dark-Blue);
+}
+
+#share-icon-button:hover svg path {
+    fill: white;
+}
+
+#socialBar {
+    top: -65px;
+    position: absolute;
+    background-color: var(--Very-Dark-Grayish-Blue);
+    padding: 15px 30px;
+    flex-direction: row;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.socialBar-text {
+    color: var(--Light-Grayish-Blue);
+    letter-spacing: 0.4em;   
+}
+
+.triangle {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid var(--Very-Dark-Grayish-Blue);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background: none;
+    border: none;
+    display: grid;
+    place-items: center;
+}
+
+#socialBar button {
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+
+    body {
+        display: block;
+    }
+
+    .article-preview-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .drawer-image-container img {
+        border-radius: 0;
+    }
+
+    #right-col-bottom-container {
+        padding-bottom: 0;
+        min-height: 75px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .dark-colour-background {
+        background-color: var(--Very-Dark-Grayish-Blue);
+    }
+
+    #social-links-mobile {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #social-links-mobile button {
+        margin-left: 10px;
+    }
+
+    
+}
+
+
+
+
+
+
+
