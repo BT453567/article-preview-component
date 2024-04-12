@@ -166,14 +166,9 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-button {
-    background: none;
-    border: none;
-    display: grid;
-    place-items: center;
-}
 
-#socialBar button {
+
+#socialBar a {
     margin-left: 20px;
 }
 
@@ -210,8 +205,8 @@ button {
         flex-wrap: wrap;
     }
 
-    #social-links-mobile button {
-        margin-left: 10px;
+    #social-links-mobile a {
+        margin-left: 15px;
     }
 
     
