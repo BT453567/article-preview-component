@@ -76,7 +76,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 #avatar-left-aligned {
@@ -142,11 +141,17 @@ body {
     position: absolute;
     background-color: var(--Very-Dark-Grayish-Blue);
     padding: 15px 30px;
+    display: flex;
     flex-direction: row;
     border-radius: 10px;
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+#socialBar.hide {
+    display: none;
+}
+
 
 .socialBar-text {
     color: var(--Light-Grayish-Blue);
@@ -172,6 +177,12 @@ body {
     margin-left: 20px;
 }
 
+#social-links-mobile.hide {
+    display: none;
+}
+
+
+
 @media only screen and (max-width: 480px) {
 
     body {
@@ -195,11 +206,16 @@ body {
         justify-content: center;
     }
 
+    .hide {
+        display: none;
+    }
+
     .dark-colour-background {
         background-color: var(--Very-Dark-Grayish-Blue);
     }
 
     #social-links-mobile {
+        display: flex;
         flex-direction: row;
         align-items: center;
         flex-wrap: wrap;
